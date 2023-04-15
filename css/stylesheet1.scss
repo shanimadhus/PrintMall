@@ -187,6 +187,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('printmall-icons.css');
 
+:root {
+    --pmscrsz: 0.52082vw;
+    --pmscrszn: -0.52082vw;
+}
+
 //body
 body {
     font-family: 'Roboto', sans-serif;
@@ -194,22 +199,10 @@ body {
     word-wrap: break-word;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    
 	.swiper{
 		font-size: 10px;
 	}
-    @media (max-width: 991px) {
-        font-size: 8px;
-		.swiper{
-			font-size: 8px;
-		}
-    }
-
-    @media (max-width: 319px) {
-        font-size: 6px;
-		.swiper{
-			font-size: 6px;
-		}
-    }
     
     * {
         padding: 0px;
@@ -453,6 +446,7 @@ body {
     //footer
     footer{
         font-size: 6px;
+        padding-bottom: 60px;
         .container{
             position: relative;
             padding: 0px;
@@ -472,6 +466,7 @@ body {
                 a{
                     color: #000000;
                     margin-right: 24px;
+                    margin-bottom: 6px;
                 }
             }
             a{
@@ -505,7 +500,39 @@ body {
                         margin-right: 6px;
                     }
                 }
+                &.phone{
+                    font-size: 320%;
+                    font-weight: 900;
+                }
             }
+        }
+        .print_mall_ft_3{
+            h3{
+                margin-bottom: 6px;
+            }
+        }
+    }
+    
+    //body responsive font size
+    @media (max-width: 991px) {
+        font-size: 8px;
+		.swiper{
+			font-size: 8px;
+		}
+        footer{
+            font-size: 5px;
+            padding-bottom: calc(var(--pmscrsz)*60/6);
+        }
+    }
+
+    @media (max-width: 319px) {
+        font-size: 6px;
+		.swiper{
+			font-size: 6px;
+		}
+        footer{
+            font-size: 4px;
+            padding-bottom: calc(var(--pmscrsz)*60/6);
         }
     }
 }
