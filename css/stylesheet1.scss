@@ -441,7 +441,14 @@ body {
         }
     }
     main{
-        
+        .product-photo{
+            text-align: center;
+            padding: 25px;
+            img{
+                max-height: 320px;
+                width: auto;
+            }
+        }
     }
     //footer
     footer{
