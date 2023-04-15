@@ -7,7 +7,7 @@
 <title>Madhus and Madhus - Print Mall - Printers and Designers</title>
 <!-- Bootstrap -->
 <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-<link href="css/stylesheet1.css" rel="stylesheet">
+<link href="css/stylesheet1.css?v=1" rel="stylesheet">
 </head>
 <body>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
@@ -282,6 +282,8 @@
 <script src="js/aos.js"></script> 
 <script src="js/swiper-bundle.min.js"></script> 
 <script>
+$(function(){
+	$("main").addClass("show");
     //anim AOS
 	if($("[data-aos]").length > 0){
 		AOS.init({
@@ -316,6 +318,7 @@
       }
     });
   }
+})
     </script>
 </body>
 </html>
