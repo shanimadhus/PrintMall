@@ -1,0 +1,65 @@
+// Madhus and Madhus - Print Mall - Scss Document
+
+$icomoon-font-family: "printmall" !default;
+$icomoon-font-path: "../webfonts" !default;
+
+$printmall_Icons_call: "\e900";
+$printmall_Icons_Cart: "\e901";
+$printmall_Icons_email: "\e902";
+$printmall_Icons_location: "\e903";
+$printmall_Icons_phone: "\e904";
+$printmall_Icons_user: "\e905";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="printmall_"], [class*=" printmall_"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.printmall_Icons_call {
+  &:before {
+    content: $printmall_Icons_call; 
+  }
+}
+.printmall_Icons_Cart {
+  &:before {
+    content: $printmall_Icons_Cart; 
+  }
+}
+.printmall_Icons_email {
+  &:before {
+    content: $printmall_Icons_email; 
+  }
+}
+.printmall_Icons_location {
+  &:before {
+    content: $printmall_Icons_location; 
+  }
+}
+.printmall_Icons_phone {
+  &:before {
+    content: $printmall_Icons_phone; 
+  }
+}
+.printmall_Icons_user {
+  &:before {
+    content: $printmall_Icons_user; 
+  }
+}
