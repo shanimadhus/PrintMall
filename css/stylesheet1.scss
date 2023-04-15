@@ -185,6 +185,8 @@
 //fonts
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("aos-anim.css");
+@import url("swiper-bundle.min.css");
 @import url('printmall-icons.css');
 
 :root {
@@ -340,6 +342,9 @@ body {
                 a.nav-link{
                     color: #000000;
                     text-decoration: none;
+					&:active{
+//						box-shadow: inset 1px 1px 3px 1px #a3a3a3;
+					}
                     &:after{
                         display: none;
                     }
@@ -441,6 +446,18 @@ body {
         }
     }
     main{
+		#print_mall_products{
+			background-image: url('../images/BG1.png'); 
+			background-size: cover; 
+			background-position: top center; 
+			background-attachment: fixed; 
+			padding: 60px 0px 100px; 
+			h1{
+				font-size: 250%;
+				font-weight: 700;
+				color: rebeccapurple;
+			}
+		}
         .product-photo{
             text-align: center;
             padding: 25px;
@@ -463,6 +480,7 @@ body {
             position: absolute;
             bottom: 100%;
             padding-right: 18px;
+			max-width: 620px;
         }
         [class*="print_mall_ft_"]{
             margin-top: 12px;
