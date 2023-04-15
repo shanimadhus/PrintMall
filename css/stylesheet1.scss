@@ -167,11 +167,18 @@
 }
 
 @mixin linkhovers($ob1, $ob2){
+    outline: none;
+    text-decoration: none;
+    transition: color 0.7s ease;
     &:hover, &:focus{
         color: $ob1;
     }
+    &:focus{
+        transition: none;
+    }
     &:active{
         color: $ob2;
+        transition: none;
     }
 }
 
@@ -435,6 +442,67 @@ body {
                     img{
                         width: 100%;
                         height: auto;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        
+    }
+    //footer
+    footer{
+        font-size: 6px;
+        .container{
+            position: relative;
+            padding: 0px;
+        }
+        .print_mall_ft_im1{
+            display: block;
+            position: absolute;
+            bottom: 100%;
+            padding-right: 18px;
+        }
+        [class*="print_mall_ft_"]{
+            margin-top: 12px;
+            h3{
+                font-size: 290%;
+                font-weight: bold;
+                margin-bottom: 12px;
+                a{
+                    color: #000000;
+                    margin-right: 24px;
+                }
+            }
+            a{
+                color: #000000;
+                display: inline-block;
+                @include linkhovers(#FF6633, #E53800);
+            }
+            p{
+                font-size: 270%;
+                font-weight: normal;
+                margin: 0px;
+                + p{
+                    margin-top: 6px;
+                }
+            }
+        }
+        .print_mall_ft_1{
+            p{
+                display: flex;
+                align-items: flex-start;
+                .printmall_Icons_location{
+                    font-size: 270%;
+                    margin-right: 6px;
+                }
+                a{
+                    color: #000000;
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    [class*="printmall_Icons_"]{
+                        margin-right: 6px;
                     }
                 }
             }
