@@ -457,11 +457,44 @@ body {
 			background-size: cover; 
 			background-position: top center; 
 			background-attachment: fixed; 
-			padding: 60px 0px 100px; 
+			padding: 60px 0px; 
 			h1{
 				font-size: 250%;
 				font-weight: 700;
 				color: rebeccapurple;
+			}
+		}
+		#print_mall_services{
+			padding: 60px 0px 100px;
+			background-color: #D8B08C;
+			h2{
+				font-size: 200%;
+				font-weight: 500;
+				color: #8f0000;
+				text-transform: uppercase;
+				+ p{
+					margin-top: 12px;
+				}
+			}
+			p{
+				font-size: 180%;
+				font-weight: 400;
+				line-height: normal;
+				&.big{
+					font-size: 350%;
+					font-weight: 900;
+				}
+			}
+			.service-photo{
+				padding: 6px;
+				.service-caption{
+					font-size: 70%;
+					text-transform: uppercase;
+					letter-spacing: 3px;
+					background: #dfbda0;
+					color: #000000;
+					text-align: center;
+				}
 			}
 		}
         .product-photo{
