@@ -4,10 +4,16 @@
     position: absolute;
     left: 0px;
     top: 0px;
+    width: 100%;
+    height: 100%;
+}
+@mixin absnrm {
+    position: absolute;
+    left: 0px;
+    top: 0px;
     right: 0px;
     bottom: 0px;
 }
-
 @mixin default_docset {
     h1 {
         font-size: 350%;
@@ -452,6 +458,43 @@ body {
 			opacity: 1;
 			transition: opacity 0.7s linear;
 		}
+        #print_mall{
+            position: relative;
+            min-height: 60vh;
+            overflow: hidden;
+            .print_mall{
+                padding-bottom: 56.25%;
+                @include abs; 
+                video{
+                    @include absnrm; 
+                    z-index: 1;
+                }
+                &:before{
+                    content: "";
+                    background-color: rgba(140,24,34,0.6);
+                    display: block;
+                    @include abs;
+                    z-index: 2;
+                }
+                .print_mall_text{
+                    position: relative;
+                    min-height: 60vh;
+                    padding: 25px 50px;
+                    z-index: 3;
+                    h1, h2, h3{
+                        color: #ffffff;
+                        font-weight: 900;
+                        text-transform: uppercase;
+                    }
+                    h1{
+                        font-size: 560%;
+                    }
+                    h2, h3{
+                        font-size: 360%;
+                    }
+                }
+            }
+        }
 		#print_mall_products{
 			background-image: url('../images/BG1.png'); 
 			background-size: cover; 
