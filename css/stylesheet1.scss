@@ -198,6 +198,7 @@
 :root {
     --pmscrsz: 0.52082vw;
     --pmscrszn: -0.52082vw;
+	--vscreenht: 75vh;
 }
 
 //body
@@ -460,26 +461,26 @@ body {
 		}
         #print_mall{
             position: relative;
-            min-height: 60vh;
+            min-height: var(--vscreenht);
             overflow: hidden;
             .print_mall{
                 padding-bottom: 56.25%;
                 @include abs; 
                 video{
                     @include absnrm; 
+					height: 100%;
                     z-index: 1;
                 }
                 &:before{
                     content: "";
-                    background-color: rgba(140,24,34,0.6);
+                    background-color: rgba(140,24,34,0.8);
                     display: block;
                     @include abs;
                     z-index: 2;
                 }
                 .print_mall_text{
                     position: relative;
-                    min-height: 60vh;
-                    padding: 25px 50px;
+                    min-height: var(--vscreenht);
                     z-index: 3;
                     h1, h2, h3{
                         color: #ffffff;
@@ -487,6 +488,7 @@ body {
                         text-transform: uppercase;
                     }
                     h1{
+						font-family: 'Crete Round', serif;
                         font-size: 560%;
                     }
                     h2, h3{
@@ -537,6 +539,54 @@ body {
 					background: #dfbda0;
 					color: #000000;
 					text-align: center;
+				}
+			}
+		}
+		#print_mall_subscribers{
+			padding: 60px 0px 120px;
+			background-color: #000;
+			color: #ffffff;
+			text-align: center;
+			h2{
+				font-size: 350%;
+				font-weight: 900;
+				margin-bottom: 12px;
+			}
+			p{
+				font-size: 180%;
+				margin-bottom: 6px;
+			}
+			form{
+				font-size: 180%;
+				margin: 12px 0px 0px;
+				.btn{
+					color: #fff;
+					background-color: #242673;
+					border-color: #1D1F5E;
+				}
+				@media (max-width: 767px){
+					input{
+						width: 100%;
+						border-bottom-left-radius: 0px;
+						border-bottom-right-radius: 0px;
+					}
+					.btn{
+						width: 100%;
+						border-top-left-radius: 0px;
+						border-top-right-radius: 0px;
+					}
+				}
+				@media (min-width: 768px){
+					input{
+						width: 100%;
+						max-width: 350px;
+						border-bottom-right-radius: 0px;
+						border-top-right-radius: 0px;
+					}
+					.btn{
+						border-bottom-left-radius: 0px;
+						border-top-left-radius: 0px;
+					}
 				}
 			}
 		}
@@ -610,6 +660,7 @@ body {
                 &.phone{
                     font-size: 320%;
                     font-weight: 900;
+					flex-wrap: wrap;
                 }
             }
         }
@@ -618,6 +669,9 @@ body {
                 margin-bottom: 6px;
             }
         }
+		address{
+			margin-bottom: 6px;
+		}
     }
     
     //body responsive font size
