@@ -89,7 +89,8 @@ $(function () {
       }
       //inches
       $sizewdfeet = $mtwdft * $mthtft; 
-      $resultft = Math.round($sizewdfeet * $unitprice);
+	  $copies = $("#copies").val();
+      $resultft = Math.round($sizewdfeet * $unitprice * $copies);
         
         if($resultft > 300){
             $("#total").attr("value", $resultft + " INR").css("background-color", "#ffffff");
