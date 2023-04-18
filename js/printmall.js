@@ -92,7 +92,7 @@ $(function () {
       $resultft = Math.round($sizewdfeet * $unitprice);
         
         if($resultft > 300){
-            $("#total").attr("value", $resultft + " INR").css({"background-color", "#ffffff"});
+            $("#total").attr("value", $resultft + " INR").css("background-color", "#ffffff");
         }
         else{
             $("#total").attr("value", $resultft + " INR (read note)").css("background-color", "#dd6969");
