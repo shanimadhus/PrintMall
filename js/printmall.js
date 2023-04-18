@@ -90,13 +90,14 @@ $(function () {
       //inches
       $sizewdfeet = $mtwdft * $mthtft; 
 	  $copies = $("#copies").val();
-      $resultft = Math.round($sizewdfeet * $unitprice * $copies);
+      $resultft = $sizewdfeet * $unitprice * $copies;
+		$reqresultft = $resultft.toFixed(2);
         
-        if($resultft > 300){
-            $("#total").attr("value", $resultft + " INR").css("background-color", "#ffffff");
+        if($reqresultft > 300){
+            $("#total").attr("value", $reqresultft + " INR").css("background-color", "#ffffff");
         }
         else{
-            $("#total").attr("value", $resultft + " INR (read note)").css("background-color", "#dd6969");
+            $("#total").attr("value", $reqresultft + " INR (read note)").css("background-color", "#dd6969");
         }
       event.preventDefault();
     });
