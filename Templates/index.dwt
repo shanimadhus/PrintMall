@@ -378,7 +378,7 @@
     <div class="container">
       <div class="print_mall_ft_im1">
         <h2 style="display: none">Print Mall resources and references</h2>
-        <img src="../images/Footer_logo.png" width="812" height="51" alt="Madhus and Madhus - Print Mall"></div>
+        <img src="images/Footer_logo.png" width="812" height="51" alt="Madhus and Madhus - Print Mall"></div>
       <hr style="background-color: #FF6633; border: none; display: block; height: 3px;">
       <div class="row">
         <div class="col-12 col-sm-12 col-md-8">
@@ -386,12 +386,12 @@
             <h3><a href="#">Printing</a> <a href="#">Services</a> <a href="#">About Us</a> <a href="#">Contact</a></h3>
             <div class="row">
               <div class="col-sm-6">
-                <p><span class="printmall_Icons_location"></span> Plot No.20, Kinfra Industrial Park, Industrial Estate, Mundakkal, Kollam, Ph: 0474 2765030</p>
+                <address><p><span class="printmall_Icons_location"></span> Plot No.20, Kinfra Industrial Park, Industrial Estate, Mundakkal, Kollam, Kerala, PIN-691001</p></address>
               </div>
               <div class="col-sm-6">
                 <p><a href="mailto:madhusadvt@rediffmail.com" target="_blank"><span class="printmall_Icons_email"></span> madhusadvt@rediffmail.com</a></p>
                 <p><a href="mailto:printmallkinfra@gmail.com" target="_blank"><span class="printmall_Icons_email"></span> printmallkinfra@gmail.com</a></p>
-                <p class="phone"><a href="tel:00919847001941"><span class="printmall_Icons_phone"></span> 9847001941</a></p>
+                <p class="phone"><a href="tel:00914742765030"><span class="printmall_Icons_call"></span>0474-2765030</a>, <a href="tel:00919847001941"><span class="printmall_Icons_phone"></span>9847001941</a></p>
               </div>
             </div>
           </div>
@@ -409,6 +409,7 @@
           <div class="print_mall_ft_3">
             <h3>Madhus and Madhus - Terms &amp; Copyrights</h3>
             <p><a href="#">Privacy Policy</a> | <a href="#">Terms and conditions</a> | <a href="#">Disclaimer</a> | <span style="display: inline-block">Copyrights<sup>©</sup> Print Mall 2023, All Rights Reserved<sup>®</sup></span></p>
+			  <p style="font-size: 220%; color: red">This website is under construction.</p>
           </div>
         </div>
       </div>
