@@ -1,0 +1,8 @@
+<select id="print_mall_materials_type" class="form-control">
+    <option data-price="20">WHITE FLEX</option>
+    <option data-price="20">BACK BLACK FLEX - 220 GSM</option>
+    <option data-price="40">STAR FLEX</option>
+    <option data-price="35">BACK LIT NORMAL</option>
+    <option data-price="55">BACK LIT STAR</option>
+    <option data-price="150">REFLECTIVE FLEX</option>
+</select>

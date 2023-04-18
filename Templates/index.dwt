@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/index.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- InstanceBeginEditable name="doctitle" -->
+<!-- TemplateBeginEditable name="doctitle" -->
 <title>Madhus and Madhus - Print Mall - Printers and Designers</title>
-<!-- InstanceEndEditable -->
+<!-- TemplateEndEditable -->
 <!-- Bootstrap -->
-<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-<link href="css/stylesheet1.css?v=1" rel="stylesheet">
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+<link href="../css/bootstrap-4.4.1.css" rel="stylesheet">
+<link href="../css/stylesheet1.css?v=1" rel="stylesheet">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
 </head>
 <body>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="js/jquery-3.4.1.min.js"></script>
-<!-- InstanceBeginEditable name="additional_space1" -->
-<!-- InstanceEndEditable -->
+<script src="../js/jquery-3.4.1.min.js"></script>
+<!-- TemplateBeginEditable name="additional_space1" -->
+<!-- TemplateEndEditable -->
 <div class="print-mall_pgmargin">
   <header>
     <nav class="navbar navbar-expand-lg">
-      <div class="container align-items-end"><a class="navbar-brand" href="index.html"><img src="images/Logo.png" width="1080" height="234" alt="Logo of Madhus and Madhus - Print Mall - Printers and Designers"></a>
+      <div class="container align-items-end"><a class="navbar-brand" href="../index.html"><img src="../images/Logo.png" width="1080" height="234" alt="Logo of Madhus and Madhus - Print Mall - Printers and Designers"></a>
         <div class="hdrbtn">
           <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon">&#8592;<br>
           &#8592;<br>
@@ -34,7 +34,7 @@
               <div class="dropdown-menu" aria-labelledby="PrintMallPrinting"> <a class="dropdown-item" href="#">Flex Printing</a> <a class="dropdown-item" href="#">Cloth Printing</a> <a class="dropdown-item" href="#">Vinyl Printing</a> </div>
             </li>
             <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="PrintMallServices" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
-              <div class="dropdown-menu" aria-labelledby="PrintMallServices"> <a class="dropdown-item" href="#">Design</a> <a class="dropdown-item" href="#">Printing</a> <a class="dropdown-item" href="#">Shop Board</a> <a class="dropdown-item" href="#">Sign Board</a> <a class="dropdown-item" href="#">LED Sign Board</a> <a class="dropdown-item" href="#">Wooden Frame Board</a> <a class="dropdown-item" href="#">Acrylic Board</a> <a class="dropdown-item" href="#">Hoarding</a> <a class="dropdown-item" href="pricelist_payments.html">Make a Payment</a> </div>
+              <div class="dropdown-menu" aria-labelledby="PrintMallServices"> <a class="dropdown-item" href="#">Design</a> <a class="dropdown-item" href="#">Printing</a> <a class="dropdown-item" href="#">Shop Board</a> <a class="dropdown-item" href="#">Sign Board</a> <a class="dropdown-item" href="#">LED Sign Board</a> <a class="dropdown-item" href="#">Wooden Frame Board</a> <a class="dropdown-item" href="#">Acrylic Board</a> <a class="dropdown-item" href="#">Hoarding</a> <a class="dropdown-item" href="../pricelist_payments.html">Make a Payment</a> </div>
             </li>
             <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="PrintMallAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About us</a>
               <div class="dropdown-menu" aria-labelledby="PrintMallAbout"> <a class="dropdown-item" href="#">Who We Are?</a> <a class="dropdown-item" href="#">Our Team</a> <a class="dropdown-item" href="#">Equipment</a> <a class="dropdown-item" href="#">The Team</a> <a class="dropdown-item" href="#">Gallery</a> <a class="dropdown-item" href="#">FAQs</a> <a class="dropdown-item" href="#">Career</a> </div>
@@ -50,11 +50,11 @@
     </nav>
   </header>
   <main>
-      <!-- InstanceBeginEditable name="EditRegion1" -->
+      <!-- TemplateBeginEditable name="EditRegion1" -->
     <section id="print_mall">
       <div class="print_mall">
         <video autoplay muted  loop>
-          <source src="videos/printmall.mp4" type="video/mp4">
+          <source src="../videos/printmall.mp4" type="video/mp4">
           Your browser doest not support html5 video </video>
         <div class="print_mall_text d-flex justify-content-center align-items-center">
           <div class="container text-center">
@@ -73,7 +73,7 @@
           <div class="swiper-slide">
             <div class="print_mall_products">
               <div class="product-photo">
-                <figure><img src="images/products/Printer.png" width="1606" height="972" alt="Printer">
+                <figure><img src="../images/products/Printer.png" width="1606" height="972" alt="Printer">
                   <figcaption class="product-caption"> 
                     <!--                        <p>Printer</p>--> 
                   </figcaption>
@@ -84,7 +84,7 @@
           <div class="swiper-slide">
             <div class="print_mall_products">
               <div class="product-photo">
-                <figure><img src="images/products/Acrylic_Sign_Board.png" width="976" height="597" alt="Acrylic Sign Board">
+                <figure><img src="../images/products/Acrylic_Sign_Board.png" width="976" height="597" alt="Acrylic Sign Board">
                   <figcaption class="product-caption"> 
                     <!--                        <p>Printer</p>--> 
                   </figcaption>
@@ -95,7 +95,7 @@
           <div class="swiper-slide">
             <div class="print_mall_products">
               <div class="product-photo">
-                <figure><img src="images/products/Acrylic_Signs.png" width="845" height="519" alt="Acrylic Signs">
+                <figure><img src="../images/products/Acrylic_Signs.png" width="845" height="519" alt="Acrylic Signs">
                   <figcaption class="product-caption"> 
                     <!--                        <p>Printer</p>--> 
                   </figcaption>
@@ -106,7 +106,7 @@
           <div class="swiper-slide">
             <div class="print_mall_products">
               <div class="product-photo">
-                <figure><img src="images/products/CustomFlex.png" width="914" height="642" alt="Custom Flex">
+                <figure><img src="../images/products/CustomFlex.png" width="914" height="642" alt="Custom Flex">
                   <figcaption class="product-caption"> 
                     <!--                        <p>Printer</p>--> 
                   </figcaption>
@@ -117,7 +117,7 @@
           <div class="swiper-slide">
             <div class="print_mall_products">
               <div class="product-photo">
-                <figure><img src="images/products/CustomFlexDeco.png" width="443" height="560" alt="Custom Flex Decoration">
+                <figure><img src="../images/products/CustomFlexDeco.png" width="443" height="560" alt="Custom Flex Decoration">
                   <figcaption class="product-caption"> 
                     <!--                        <p>Printer</p>--> 
                   </figcaption>
@@ -128,7 +128,7 @@
           <div class="swiper-slide">
             <div class="print_mall_products">
               <div class="product-photo">
-                <figure><img src="images/products/CustomFlexDeco_.png" width="404" height="687" alt="Custom Flex Decoration">
+                <figure><img src="../images/products/CustomFlexDeco_.png" width="404" height="687" alt="Custom Flex Decoration">
                   <figcaption class="product-caption"> 
                     <!--                        <p>Printer</p>--> 
                   </figcaption>
@@ -139,7 +139,7 @@
           <div class="swiper-slide">
             <div class="print_mall_products">
               <div class="product-photo">
-                <figure><img src="images/products/CustomFlexDeco2.png" width="624" height="565" alt="Custom Flex Decoration">
+                <figure><img src="../images/products/CustomFlexDeco2.png" width="624" height="565" alt="Custom Flex Decoration">
                   <figcaption class="product-caption"> 
                     <!--                        <p>Printer</p>--> 
                   </figcaption>
@@ -150,7 +150,7 @@
           <div class="swiper-slide">
             <div class="print_mall_products">
               <div class="product-photo">
-                <figure><img src="images/products/CustomFlexDeco3.png" width="852" height="549" alt="Custom Flex Decoration">
+                <figure><img src="../images/products/CustomFlexDeco3.png" width="852" height="549" alt="Custom Flex Decoration">
                   <figcaption class="product-caption"> 
                     <!--                        <p>Printer</p>--> 
                   </figcaption>
@@ -161,7 +161,7 @@
           <div class="swiper-slide">
             <div class="print_mall_products">
               <div class="product-photo">
-                <figure><img src="images/products/FlexBanners.png" width="885" height="840" alt="Flex Banners">
+                <figure><img src="../images/products/FlexBanners.png" width="885" height="840" alt="Flex Banners">
                   <figcaption class="product-caption"> 
                     <!--                        <p>Printer</p>--> 
                   </figcaption>
@@ -172,7 +172,7 @@
           <div class="swiper-slide">
             <div class="print_mall_products">
               <div class="product-photo">
-                <figure><img src="images/products/Hoardings.png" width="1150" height="978" alt="Hoardings">
+                <figure><img src="../images/products/Hoardings.png" width="1150" height="978" alt="Hoardings">
                   <figcaption class="product-caption"> 
                     <!--                        <p>Printer</p>--> 
                   </figcaption>
@@ -183,7 +183,7 @@
           <div class="swiper-slide">
             <div class="print_mall_products">
               <div class="product-photo">
-                <figure><img src="images/products/LED_Sign_Board.png" width="497" height="328" alt="LED Sign Board">
+                <figure><img src="../images/products/LED_Sign_Board.png" width="497" height="328" alt="LED Sign Board">
                   <figcaption class="product-caption"> 
                     <!--                        <p>Printer</p>--> 
                   </figcaption>
@@ -194,7 +194,7 @@
           <div class="swiper-slide">
             <div class="print_mall_products">
               <div class="product-photo">
-                <figure><img src="images/products/shop_board.png" width="1220" height="688" alt="shop board">
+                <figure><img src="../images/products/shop_board.png" width="1220" height="688" alt="shop board">
                   <figcaption class="product-caption"> 
                     <!--                        <p>Printer</p>--> 
                   </figcaption>
@@ -205,7 +205,7 @@
           <div class="swiper-slide">
             <div class="print_mall_products">
               <div class="product-photo">
-                <figure><img src="images/products/ShopBoard1.png" width="763" height="452" alt="shop board">
+                <figure><img src="../images/products/ShopBoard1.png" width="763" height="452" alt="shop board">
                   <figcaption class="product-caption"> 
                     <!--                        <p>Printer</p>--> 
                   </figcaption>
@@ -216,7 +216,7 @@
           <div class="swiper-slide">
             <div class="print_mall_products">
               <div class="product-photo">
-                <figure><img src="images/products/Standy1.png" width="289" height="525" alt="Standy">
+                <figure><img src="../images/products/Standy1.png" width="289" height="525" alt="Standy">
                   <figcaption class="product-caption"> 
                     <!--                        <p>Printer</p>--> 
                   </figcaption>
@@ -227,7 +227,7 @@
           <div class="swiper-slide">
             <div class="print_mall_products">
               <div class="product-photo">
-                <figure><img src="images/products/Standy2.png" width="450" height="540" alt="Standy">
+                <figure><img src="../images/products/Standy2.png" width="450" height="540" alt="Standy">
                   <figcaption class="product-caption"> 
                     <!--                        <p>Printer</p>--> 
                   </figcaption>
@@ -238,7 +238,7 @@
           <div class="swiper-slide">
             <div class="print_mall_products">
               <div class="product-photo">
-                <figure><img src="images/products/Vision_Posters.png" width="483" height="628" alt="Vision Posters">
+                <figure><img src="../images/products/Vision_Posters.png" width="483" height="628" alt="Vision Posters">
                   <figcaption class="product-caption"> 
                     <!--                        <p>Printer</p>--> 
                   </figcaption>
@@ -273,7 +273,7 @@
             <div class="swiper-slide">
               <div class="print_mall_services_3">
                 <div class="service-photo">
-                  <figure><img src="images/PSD/Services-assets/design.jpg" width="600" height="599" alt="Design">
+                  <figure><img src="../images/PSD/Services-assets/design.jpg" width="600" height="599" alt="Design">
                     <figcaption class="service-caption">
                       <p>Design</p>
                     </figcaption>
@@ -284,7 +284,7 @@
             <div class="swiper-slide">
               <div class="print_mall_services_3">
                 <div class="service-photo">
-                  <figure><img src="images/PSD/Services-assets/printing.jpg" width="600" height="600" alt="Printing">
+                  <figure><img src="../images/PSD/Services-assets/printing.jpg" width="600" height="600" alt="Printing">
                     <figcaption class="service-caption">
                       <p>Printing</p>
                     </figcaption>
@@ -295,7 +295,7 @@
             <div class="swiper-slide">
               <div class="print_mall_services_3">
                 <div class="service-photo">
-                  <figure><img src="images/PSD/Services-assets/shop_board.jpg" width="600" height="600" alt="Shop Lit Board">
+                  <figure><img src="../images/PSD/Services-assets/shop_board.jpg" width="600" height="600" alt="Shop Lit Board">
                     <figcaption class="service-caption">
                       <p>Shop Lit Board</p>
                     </figcaption>
@@ -306,7 +306,7 @@
             <div class="swiper-slide">
               <div class="print_mall_services_3">
                 <div class="service-photo">
-                  <figure><img src="images/PSD/Services-assets/Sign_Board.jpg" width="600" height="600" alt="Sign Board">
+                  <figure><img src="../images/PSD/Services-assets/Sign_Board.jpg" width="600" height="600" alt="Sign Board">
                     <figcaption class="service-caption">
                       <p>Sign Board</p>
                     </figcaption>
@@ -317,7 +317,7 @@
             <div class="swiper-slide">
               <div class="print_mall_services_3">
                 <div class="service-photo">
-                  <figure><img src="images/PSD/Services-assets/LED_Sign_Board.jpg" width="600" height="599" alt="LED Sign Board">
+                  <figure><img src="../images/PSD/Services-assets/LED_Sign_Board.jpg" width="600" height="599" alt="LED Sign Board">
                     <figcaption class="service-caption">
                       <p>Acrylic LED Sign Board</p>
                     </figcaption>
@@ -328,7 +328,7 @@
             <div class="swiper-slide">
               <div class="print_mall_services_3">
                 <div class="service-photo">
-                  <figure><img src="images/PSD/Services-assets/Wooden_Frame_Board.jpg" width="600" height="600" alt="Wooden Frame Board">
+                  <figure><img src="../images/PSD/Services-assets/Wooden_Frame_Board.jpg" width="600" height="600" alt="Wooden Frame Board">
                     <figcaption class="service-caption">
                       <p>Wooden Frame Board</p>
                     </figcaption>
@@ -339,7 +339,7 @@
             <div class="swiper-slide">
               <div class="print_mall_services_3">
                 <div class="service-photo">
-                  <figure><img src="images/PSD/Services-assets/Acrylic_Board.jpg" width="600" height="600" alt="Acrylic Board">
+                  <figure><img src="../images/PSD/Services-assets/Acrylic_Board.jpg" width="600" height="600" alt="Acrylic Board">
                     <figcaption class="service-caption">
                       <p>Acrylic Board</p>
                     </figcaption>
@@ -350,7 +350,7 @@
             <div class="swiper-slide">
               <div class="print_mall_services_3">
                 <div class="service-photo">
-                  <figure><img src="images/PSD/Services-assets/Hoarding.jpg" width="600" height="600" alt="Hoarding">
+                  <figure><img src="../images/PSD/Services-assets/Hoarding.jpg" width="600" height="600" alt="Hoarding">
                     <figcaption class="service-caption">
                       <p>Hoarding</p>
                     </figcaption>
@@ -368,17 +368,17 @@
         <p>Sign up to hear from us about specials, sales, and events.</p>
         <form class="form-inline justify-content-center" action="#">
           <input type="email" class="form-control" placeholder="Enter email" id="email">
-          <button type="submit" class="btn">Subscribe</button>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
         </form>
       </div>
     </section>
-      <!-- InstanceEndEditable -->      
+      <!-- TemplateEndEditable -->      
   </main>
   <footer>
     <div class="container">
       <div class="print_mall_ft_im1">
         <h2 style="display: none">Print Mall resources and references</h2>
-        <img src="images/Footer_logo.png" width="812" height="51" alt="Madhus and Madhus - Print Mall"></div>
+        <img src="../images/Footer_logo.png" width="812" height="51" alt="Madhus and Madhus - Print Mall"></div>
       <hr style="background-color: #FF6633; border: none; display: block; height: 3px;">
       <div class="row">
         <div class="col-12 col-sm-12 col-md-8">
@@ -416,10 +416,10 @@
   </footer>
 </div>
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/popper.min.js"></script> 
-<script src="js/bootstrap-4.4.1.js"></script> 
-<script src="js/aos.js"></script> 
-<script src="js/swiper-bundle.min.js"></script> 
-<script src="js/printmall.js"></script>
+<script src="../js/popper.min.js"></script> 
+<script src="../js/bootstrap-4.4.1.js"></script> 
+<script src="../js/aos.js"></script> 
+<script src="../js/swiper-bundle.min.js"></script> 
+<script src="../js/printmall.js"></script>
 </body>
-<!-- InstanceEnd --></html>
+</html>

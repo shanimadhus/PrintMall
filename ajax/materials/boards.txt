@@ -1,0 +1,5 @@
+<select id="print_mall_materials_type" class="form-control">
+    <option data-price="85">FOAM SHEET WITH VINYL</option>
+    <option data-price="50">WOODEN FRAME BOARD</option>
+    <option data-price="120">METAL SQUARE TUBE BOARD</option>
+</select>

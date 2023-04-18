@@ -1,0 +1,4 @@
+<select id="print_mall_materials_type" class="form-control">
+    <option data-price="20">NORMAL CLOTH</option>
+    <option data-price="21">BLACK CLOTH</option>
+</select>

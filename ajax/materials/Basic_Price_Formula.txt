@@ -1,0 +1,2 @@
+length x breadth = square feet
+Total price = square feet * unit price

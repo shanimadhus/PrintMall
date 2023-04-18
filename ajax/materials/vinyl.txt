@@ -1,0 +1,5 @@
+<select id="print_mall_materials_type" class="form-control">
+    <option data-price="30">NORMAL VINYL</option>
+    <option data-price="38">VINYL AVERY</option>
+    <option data-price="55">CLEAR STICKER</option>
+</select>
