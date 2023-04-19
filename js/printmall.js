@@ -221,15 +221,28 @@ $(function () {
       $photourl = $(".swiper-slide.swiper-slide-active img").attr("src");
       $phototitle = $(".swiper-slide.swiper-slide-active img").attr("alt") + " - Print Mall";
       $phototext = $(".swiper-slide.swiper-slide-active img").attr("alt") + " - Print Mall";
-      try {
-        await navigator.share({
-          text: $phototext,
-          title: $phototitle,
-          url: $photourl,
-        });
-      } catch (err) {
-        console.error("Share failed:", err.message);
-      }
+        const shareData = {
+  title: $phototitle,
+  text: $phototext,
+  url: $photourl,
+};
+//      try {
+//        await navigator.share({
+//          text: $phototext,
+//          title: $phototitle,
+//          url: $photourl,
+//        });
+//      } catch (err) {
+//        console.error("Share failed:", err.message);
+//      }
+        
+        try {
+    await navigator.share(shareData);
+    resultPara.textContent = "Shared successfully";
+  } catch (err) {
+    resultPara.textContent = "Share failed:", err.message;
+  }
+        
     });
   }
   if ($("#gallery1").length > 0) {
