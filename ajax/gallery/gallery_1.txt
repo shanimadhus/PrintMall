@@ -1,0 +1,40 @@
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="madhus_slide">
+        <div class="swiper-zoom-container"><img src="images/gallery/Gallery-assets/OneWay_Vision_posters.jpg" width="1600" height="713" alt="One Way Vision posters"><span class="swiper-caption">One Way Vision posters</span></div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="madhus_slide">
+        <div class="swiper-zoom-container"><img src="images/gallery/Gallery-assets/Vinyl_Board_1.jpg" width="1500" height="1500" alt="Vinyl Board"><span class="swiper-caption">Vinyl Board</span></div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="madhus_slide">
+        <div class="swiper-zoom-container"><img src="images/gallery/Gallery-assets/Vinyl_Board_2.jpg" width="400" height="220" alt="Vinyl Board"><span class="swiper-caption">Vinyl Board</span></div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="madhus_slide">
+        <div class="swiper-zoom-container"><img src="images/gallery/Gallery-assets/Vinyl_Board_3.jpg" width="1600" height="713" alt="Vinyl Board"><span class="swiper-caption">Vinyl Board</span></div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="madhus_slide">
+        <div class="swiper-zoom-container"><img src="images/gallery/Gallery-assets/Vinyl_Boards.jpg" width="400" height="220" alt="Vinyl Boards"><span class="swiper-caption">Vinyl Boards</span></div>
+      </div>
+    </div>
+  </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-scrollbar"></div>
+    <div class="btn-group1 d-flex">
+      <button id="fullscrn" class="btn" title="Fullscreen"><i class="eicon-frame-expand" aria-hidden="true"></i></button>
+      <button id="closescrn" style="display: none"  class="btn" title="Exit Fullscreen"><i class="eicon-frame-minimize" aria-hidden="true"></i></button>
+      <button id="zoom" class="btn" title="Zoom Photo"><i class="eicon-zoom-in-bold" aria-hidden="true"></i><i class="eicon-zoom-out-bold" aria-hidden="true" style="display: none"></i></button>
+      <button id="share" class="btn" title="Share Photo"><i class="eicon-share-arrow" aria-hidden="true"></i></button>
+      <button id="closes" class="btn" title="Close Gallery"><i class="eicon-close" aria-hidden="true"></i></button>
+    </div>
+</div>

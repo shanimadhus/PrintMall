@@ -1,6 +1,8 @@
 // Print Mall JavaScript Document
 $(function () {
+    
   $("main").addClass("show");
+    
   //anim AOS
   if ($("[data-aos]").length > 0) {
     AOS.init({
@@ -8,8 +10,9 @@ $(function () {
       once: true
     });
   }
+    
   //Swiper
-  if ($(".swiper").length > 0) {
+  if ($(".swiper.home").length > 0) {
     const swiper = new Swiper('.swiper', {
       spaceBetween: 0,
       autoplay: {
@@ -35,6 +38,7 @@ $(function () {
       }
     });
   }
+    
   //calculus
   function calltypelist($type) {
     $.ajax({
@@ -73,7 +77,7 @@ $(function () {
       $mtwdsz = $("#width_size_in option:selected").attr("data-size");
       switch ($mtwdsz) {
         case "Win":
-          $mtwdft = $mtwd/12;
+          $mtwdft = $mtwd / 12;
           break;
         case "Wft":
           $mtwdft = $mtwd;
@@ -82,28 +86,141 @@ $(function () {
       $mthtsz = $("#height_size_in option:selected").attr("data-size");
       switch ($mthtsz) {
         case "Hin":
-          $mthtft = $mtht/12;
+          $mthtft = $mtht / 12;
           break;
         case "Hft":
           $mthtft = $mtht;
       }
       //inches
-      $sizewdfeet = $mtwdft * $mthtft; 
-	  $copies = $("#copies").val();
+      $sizewdfeet = $mtwdft * $mthtft;
+      $copies = $("#copies").val();
       $resultft = $sizewdfeet * $unitprice * $copies;
-		$reqresultft = $resultft.toFixed(2);
-        
-        if($reqresultft > 300){
-            $("#total").attr("value", $reqresultft + " INR").css("background-color", "#ffffff");
-        }
-        else{
-            $("#total").attr("value", $reqresultft + " INR (read note)").css("background-color", "#dd6969");
-        }
+      $reqresultft = $resultft.toFixed(2);
+
+      if ($reqresultft > 300) {
+        $("#total").attr("value", $reqresultft + " INR").css("background-color", "#ffffff");
+      } else {
+        $("#total").attr("value", $reqresultft + " INR (read note)").css("background-color", "#dd6969");
+      }
       event.preventDefault();
     });
-      $("#pricecalculus").on("reset", function () {
-          $("#total").attr("value", 0);
-          $("#total").css("background-color", "#ffffff");
+    $("#pricecalculus").on("reset", function () {
+      $("#total").attr("value", 0);
+      $("#total").css("background-color", "#ffffff");
+    });
+  }
+  //gallery
+  function photoslide(obj1, obj2, obj3) {
+    const swiper = new Swiper(obj1, {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      autoplay: false,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        type: 'fraction',
+      },
+      loop: true,
+      zoom: {
+        maxRatio: 5,
+      },
+    });
+    swiper.slideTo(obj2 + 1, 0);
+    //zoom
+    $zooms = obj3;
+    $(".swiper-slide").dblclick(function () {
+      if ($(".swiper-slide.swiper-slide-active.swiper-slide-zoomed").length < 1) {
+        $zooms = 0;
+        swiper.allowTouchMove = true;
+        swiper.allowSlideNext = true;
+        swiper.allowSlidePrev = true;
+        $(".eicon-zoom-in-bold, .eicon-zoom-out-bold, .swiper-button-next, .swiper-button-prev").toggle();
+      } else {
+        $zooms = -1;
+        swiper.allowTouchMove = false;
+        swiper.allowSlideNext = false;
+        swiper.allowSlidePrev = false;
+        $(".eicon-zoom-in-bold, .eicon-zoom-out-bold, .swiper-button-next, .swiper-button-prev").toggle();
+      }
+    });
+    $("#zoom").click(function () {
+      $zooms++;
+      if ($zooms == 1) {
+        swiper.zoom.in(5);
+        swiper.allowTouchMove = false;
+        swiper.allowSlideNext = false;
+        swiper.allowSlidePrev = false;
+      } else {
+        swiper.zoom.out();
+        swiper.allowTouchMove = true;
+        swiper.allowSlideNext = true;
+        swiper.allowSlidePrev = true;
+        $zooms = 0;
+      }
+      $(".eicon-zoom-in-bold, .eicon-zoom-out-bold, .swiper-button-next, .swiper-button-prev").toggle();
+    });
+    $(".swiper-slide img").each(function () {
+      $(this).attr("title", "Double Click to Zoom in and out.");
+      $caption = $(this).attr("alt");
+      $(this).next("span.swiper-caption").html($caption);
+    });
+    $("#closes").click(function () {
+      $("#gallery_region1").fadeOut();
+      //		swiper.destroy(true, false);
+    });
+    document.addEventListener("fullscreenchange", function () {
+      if ((window.fullScreen) || (window.innerWidth == screen.width && window.innerHeight == screen.height)) {
+
+      } else {
+        $("#closescrn").css("display", "none");
+        $("#fullscrn, #closes, .madhus_pgmargin").css("display", "block");
+      }
+    });
+    $("#fullscrn").click(function () {
+      openFullscreen();
+      $(this).toggle();
+      $("#closescrn, #closes, .madhus_pgmargin").toggle();
+    });
+    $("#closescrn").click(function () {
+      closeFullscreen();
+      $(this).toggle();
+      $("#fullscrn, #closes, .madhus_pgmargin").toggle();
+    });
+
+
+    $("#share").on("click", async () => {
+      $photourl = $(".swiper-slide.swiper-slide-active img").attr("src");
+      $phototitle = $(".swiper-slide.swiper-slide-active img").attr("alt") + " - Madhus Advertising";
+      $phototext = $(".swiper-slide.swiper-slide-active img").attr("alt") + " - Madhus Advertising";
+      try {
+        await navigator.share({
+          text: $phototext,
+          title: $phototitle,
+          url: $photourl,
+        });
+      } catch (err) {
+        console.error("Share failed:", err.message);
+      }
+    });
+  }
+  if ($("#gallery1").length > 0) {
+    $("#gallery1 a.print_mall_gallery2").click(function () {
+      $("#gallery_region1").fadeIn();
+      $ob1 = "#gallery_region1_1 .swiper";
+      $ob2 = $(this).index();
+      $ob3 = 0;
+      $.ajax({
+        url: "ajax/gallery/gallery_1.txt",
+        dataType: "html",
+        success: function (data) {
+          $("#gallery_region1_1").html(data);
+          photoslide($ob1, $ob2, $ob3);
+        }
       });
+      return false;
+    });
   }
 });
