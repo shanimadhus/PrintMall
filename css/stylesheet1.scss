@@ -18,33 +18,25 @@
     h1 {
         font-size: 350%;
         font-weight: 700;
-        color: #F26D13;
-        -webkit-text-stroke: 1px #000;
-
         &.big {
-            font-size: 420%;
+            font-size: 422%;
         }
     }
 
     h2 {
         font-size: 320%;
         font-weight: 700;
-        color: #F26D13;
-        -webkit-text-stroke: 0.5px #000;
     }
 
     h3 {
         font-size: 260%;
         font-weight: 600;
-        color: #F26D13;
-        -webkit-text-stroke: 0.5px #000;
     }
 
     h1,
     h2,
     h3 {
         letter-spacing: 1px;
-
         &.basestyle1 {
             font-size: 300%;
             font-weight: 700;
@@ -75,9 +67,7 @@
     p,
     ul,
     ol {
-        font-family: 'Karla', sans-serif;
         font-size: 170%;
-        color: #575250;
         font-weight: 400;
         margin: 0px;
 
@@ -95,7 +85,14 @@
             margin-top: 18px;
         }
     }
-
+    address{
+        + ul, + ol, + p{
+             margin-top: 12px;
+        }
+        + h2, + h3, + h4, + h5, + h6{
+             margin-top: 18px;
+        }
+    }
     ul {
         margin-left: 30px;
 
@@ -135,9 +132,7 @@
         button {
             font-size: 170%;
             color: #ffffff;
-            background-color: #FF7A3D;
             text-align: center;
-            border: 0px outset #FF7A3D;
             text-decoration: none;
             display: inline-block;
             border-radius: 50px;
@@ -148,11 +143,10 @@
 
             &:focus,
             &:hover {
-                background-color: #FF6823;
             }
 
             &:active {
-                box-shadow: inset 0px 0px 6px 5px #f94f06;
+                box-shadow: inset 0px 0px 6px 5px #000000;
             }
         }
         &.needs-validation{
@@ -280,6 +274,15 @@ body {
         background-attachment: fixed;
         background-position: center center;
         background-size: cover;
+    }
+    .lightlocBG{
+        background-image: url("../images/lightlocationbg.jpg");
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+    }
+    .docset{
+        @include default_docset;
     }
     p {
         margin-bottom: 1em;
@@ -811,10 +814,42 @@ body {
             }
         }
         
+        //Contact
+        #print_mall_contact{
+            padding: 60px 0px;
+            ul, ol{
+                margin: 0px;
+                padding: 12px;
+                li{
+                    list-style: none;
+                }
+            }
+            address{
+                p{
+                    display: flex;
+                    .printmall_Icons_location{
+                        font-size: 135%;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            a{
+                text-decoration: none;
+                color: #333333;
+                @include linkhovers(#007bff, #005BBE);
+            }
+        }
+        
         //section header
         #print_mall_secnhdr1{
-            background-color: #590202; 
-            background-image: url("../images/hdbg1.jpg");
+            &.gallerybg{
+                background-color: #590202; 
+                background-image: url("../images/hdbg1.jpg");
+            }
+            &.locbg{
+                background-color: #232323; 
+                background-image: url("../images/locationbg.jpg");
+            }
             background-attachment: fixed;
             background-position: center center;
             background-size: cover;

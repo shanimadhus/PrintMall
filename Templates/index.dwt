@@ -18,7 +18,7 @@
 <script src="../js/jquery-3.4.1.min.js"></script>
 <!-- TemplateBeginEditable name="additional_space1" -->
 <!-- TemplateEndEditable -->
-<div class="print-mall_pgmargin">
+<div class="print-mall_pgmargin"> 
   <header>
     <nav class="navbar navbar-expand-lg">
       <div class="container align-items-end"><a class="navbar-brand" href="../index.html"><img src="../images/Logo.png" width="1080" height="234" alt="Logo of Madhus and Madhus - Print Mall - Printers and Designers"></a>
@@ -39,7 +39,7 @@
             <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="PrintMallAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About us</a>
               <div class="dropdown-menu" aria-labelledby="PrintMallAbout"> <a class="dropdown-item" href="#">Who We Are?</a> <a class="dropdown-item" href="#">Our Team</a> <a class="dropdown-item" href="#">Equipment</a> <a class="dropdown-item" href="#">The Team</a> <a class="dropdown-item" href="../gallery.html">Gallery</a> <a class="dropdown-item" href="#">FAQs</a> <a class="dropdown-item" href="#">Career</a> </div>
             </li>
-            <li class="nav-item"> <a class="nav-link" href="#">Contact</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="../contact.html">Contact</a> </li> 
           </ul>
           <!--<form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -387,7 +387,7 @@
       <div class="row">
         <div class="col-12 col-sm-12 col-md-8">
           <div class="print_mall_ft_1">
-            <h3><a href="#">Printing</a> <a href="#">Services</a> <a href="#">About Us</a> <a href="#">Contact</a></h3>
+            <h3><a href="#">Printing</a> <a href="#">Services</a> <a href="#">About Us</a> <a href="../contact.html">Contact</a></h3>
             <div class="row">
               <div class="col-sm-6">
                 <address><p><span class="printmall_Icons_location"></span> Plot No.20, Kinfra Industrial Park, Industrial Estate, Mundakkal, Kollam, Kerala, PIN-691001</p></address>
