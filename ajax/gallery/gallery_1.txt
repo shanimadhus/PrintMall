@@ -34,7 +34,6 @@
       <button id="fullscrn" class="btn" title="Fullscreen"><i class="eicon-frame-expand" aria-hidden="true"></i></button>
       <button id="closescrn" style="display: none"  class="btn" title="Exit Fullscreen"><i class="eicon-frame-minimize" aria-hidden="true"></i></button>
       <button id="zoom" class="btn" title="Zoom Photo"><i class="eicon-zoom-in-bold" aria-hidden="true"></i><i class="eicon-zoom-out-bold" aria-hidden="true" style="display: none"></i></button>
-      <button id="share" class="btn" title="Share Photo"><i class="eicon-share-arrow" aria-hidden="true"></i></button>
       <button id="closes" class="btn" title="Close Gallery"><i class="eicon-close" aria-hidden="true"></i></button>
     </div>
 </div>

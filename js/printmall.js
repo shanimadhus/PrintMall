@@ -216,34 +216,6 @@ $(function () {
       $("#fullscrn, #closes, .madhus_pgmargin").toggle();
     });
 
-
-    $("#share").on("click", async () => {
-      $photourl = $(".swiper-slide.swiper-slide-active img").attr("src");
-      $phototitle = $(".swiper-slide.swiper-slide-active img").attr("alt") + " - Print Mall";
-      $phototext = $(".swiper-slide.swiper-slide-active img").attr("alt") + " - Print Mall";
-        const shareData = {
-  title: $phototitle,
-  text: $phototext,
-  url: $photourl,
-};
-//      try {
-//        await navigator.share({
-//          text: $phototext,
-//          title: $phototitle,
-//          url: $photourl,
-//        });
-//      } catch (err) {
-//        console.error("Share failed:", err.message);
-//      }
-        
-        try {
-    await navigator.share(shareData);
-    resultPara.textContent = "Shared successfully";
-  } catch (err) {
-    resultPara.textContent = "Share failed:", err.message;
-  }
-        
-    });
   }
   if ($("#gallery1").length > 0) {
     $("#gallery1 a.print_mall_gallery2").click(function () {
