@@ -1,8 +1,8 @@
 // Print Mall JavaScript Document
 $(function () {
-    
+
   $("main").addClass("show");
-    
+
   //anim AOS
   if ($("[data-aos]").length > 0) {
     AOS.init({
@@ -10,7 +10,7 @@ $(function () {
       once: true
     });
   }
-    
+
   //Swiper
   if ($(".swiper.home").length > 0) {
     const swiper = new Swiper('.swiper', {
@@ -38,7 +38,7 @@ $(function () {
       }
     });
   }
-    
+
   //calculus
   function calltypelist($type) {
     $.ajax({
@@ -108,6 +108,32 @@ $(function () {
       $("#total").attr("value", 0);
       $("#total").css("background-color", "#ffffff");
     });
+  }
+
+  //fullscreen
+  function openFullscreen() {
+    var elem = document.documentElement;
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) {
+      /* Safari */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) {
+      /* IE11 */
+      elem.msRequestFullscreen();
+    }
+  }
+
+  function closeFullscreen() {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) {
+      /* Safari */
+      document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) {
+      /* IE11 */
+      document.msExitFullscreen();
+    }
   }
   //gallery
   function photoslide(obj1, obj2, obj3) {
@@ -193,8 +219,8 @@ $(function () {
 
     $("#share").on("click", async () => {
       $photourl = $(".swiper-slide.swiper-slide-active img").attr("src");
-      $phototitle = $(".swiper-slide.swiper-slide-active img").attr("alt") + " - Madhus Advertising";
-      $phototext = $(".swiper-slide.swiper-slide-active img").attr("alt") + " - Madhus Advertising";
+      $phototitle = $(".swiper-slide.swiper-slide-active img").attr("alt") + " - Print Mall";
+      $phototext = $(".swiper-slide.swiper-slide-active img").attr("alt") + " - Print Mall";
       try {
         await navigator.share({
           text: $phototext,
