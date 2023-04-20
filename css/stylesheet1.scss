@@ -283,6 +283,9 @@ body {
     .BG_flex_light{
         background-image: url("../images/Flex_BG_light.jpg");
     }
+    .BG_cloth_light{
+        background-image: url("../images/Flex_BG-assets/Cloth_BG_light.jpg");
+    }
     .docset{
         @include default_docset;
     }
@@ -874,6 +877,9 @@ body {
             }
             &.BG_flex{
                 background-image: url("../images/Flex_BG.jpg");
+            }
+            &.BG_cloth{
+                background-image: url("../images/Flex_BG-assets/Cloth_BG_Dark.jpg");
             }
             padding: 45px 0px;
             h1{
