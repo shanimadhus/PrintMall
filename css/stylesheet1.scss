@@ -994,8 +994,17 @@ body {
                 }
             }
         }
+		.print_mall_ft_2{
+            p{
+                font-weight: bold;
+				color: #FF6633;
+				a{
+					font-weight: normal;
+				}
+            }
+        }
         .print_mall_ft_3{
-            h3{
+            p{
                 margin-bottom: 6px;
             }
         }
