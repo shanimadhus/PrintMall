@@ -8,7 +8,7 @@
     height: 100%;
 }
 @mixin absnrm {
-    position: absolute;
+    position: absolute; 
     left: 0px;
     top: 0px;
     right: 0px;
@@ -285,6 +285,9 @@ body {
     }
     .BG_cloth_light{
         background-image: url("../images/Flex_BG-assets/Cloth_BG_light.jpg");
+    }
+    .BG_vinyl_light{
+        background-image: url("../images/Flex_BG-assets/Vinyl_BG_light.jpg");
     }
     .docset{
         @include default_docset;
@@ -880,6 +883,9 @@ body {
             }
             &.BG_cloth{
                 background-image: url("../images/Flex_BG-assets/Cloth_BG_Dark.jpg");
+            }
+            &.BG_vinyl{
+                background-image: url("../images/Flex_BG-assets/Vinyl_BG_Dark.jpg");
             }
             padding: 45px 0px;
             h1{
