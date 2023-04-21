@@ -13,7 +13,6 @@
 <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
 <link href="css/stylesheet1.css?v=2.6" rel="stylesheet">
 <!-- InstanceBeginEditable name="head" -->
-<script src="https://www.google.com/recaptcha/api.js" async defer></script> 
 <script>
     function onSubmit(token) {
       alert"thanks " + document.getElementById("subscribers_email").value);
@@ -32,7 +31,8 @@
       var element = document.getElementById("submitcapcha");
       element.onclick = validate;
     }
-  </script>
+  </script> 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <!-- InstanceEndEditable -->
 </head>
 <body>
@@ -391,7 +391,7 @@
           <div id="recaptcha" class="g-recaptcha" data-sitekey="6LdaApslAAAAAGBTn32bO8DTnUwkzn5cu9VBgfwX" data-callback="onSubmit" data-size="invisible"></div>
           <button class="btn" id="submitcapcha" type="submit">Subscribe</button>
         </form>
-		<script>onload();</script>
+        <script>onload();</script> 
       </div>
     </section>
     <!-- InstanceEndEditable --> </main>
