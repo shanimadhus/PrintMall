@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/index.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/index.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,26 +13,32 @@
 <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
 <link href="css/stylesheet1.css?v=2.6" rel="stylesheet">
 <!-- InstanceBeginEditable name="head" -->
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script> 
 <script>
-   function onSubmit(token) {
-	   var subscribersemail = document.getElementById("subscribers_email").value;
-	   if(subscribersemail!=""){
-	 		document.getElementById("subscribersform").submit();
-	   }
-	   else{
-		   alert("Email is required!");
-		   subscribersemail.focus();
-	   }
-   }
- </script>
+    function onSubmit(token) {
+      alert"thanks " + document.getElementById("subscribers_email").value);
+    }
+
+    function validate(event) {
+      event.preventDefault();
+      if (!document.getElementById("subscribers_email").value) {
+        alert("Email is required!");
+      } else {
+        grecaptcha.execute();
+      }
+    }
+
+    function onload() {
+      var element = document.getElementById("submitcapcha");
+      element.onclick = validate;
+    }
+  </script>
 <!-- InstanceEndEditable -->
 </head>
 <body>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="js/jquery-3.4.1.min.js"></script> 
-<!-- InstanceBeginEditable name="additional_space1" -->
-<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="additional_space1" --> <!-- InstanceEndEditable -->
 <div class="print-mall_pgmargin">
   <header>
     <nav class="navbar navbar-expand-lg">
@@ -381,11 +388,12 @@
         <p>Sign up to hear from us about specials, sales, and events.</p>
         <form class="form-inline justify-content-center" action="https://submit-form.com/C7gZiakO" id="subscribersform" method="post">
           <input type="email" class="form-control" placeholder="Enter email" name="subscribers_email" id="subscribers_email" required>
-          <button class="g-recaptcha btn" data-sitekey="6LdaApslAAAAAGBTn32bO8DTnUwkzn5cu9VBgfwX" data-callback="onSubmit" type="submit">Subscribe</button>
+          <div id="recaptcha" class="g-recaptcha" data-sitekey="6LdaApslAAAAAGBTn32bO8DTnUwkzn5cu9VBgfwX" data-callback="onSubmit" data-size="invisible"></div>
+          <button class="btn" id="submitcapcha" type="submit">Subscribe</button>
         </form>
       </div>
     </section>
-      <!-- InstanceEndEditable --> </main>
+    <!-- InstanceEndEditable --> </main>
   <footer>
     <div class="print_mall_hdr_ft">
       <div class="container">
@@ -435,9 +443,7 @@
     </div>
   </footer>
 </div>
-<!-- InstanceBeginEditable name="additional_region1" -->
-    
-<!-- InstanceEndEditable --> 
+<!-- InstanceBeginEditable name="additional_region1" --> <!-- InstanceEndEditable --> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/popper.min.js"></script> 
 <script src="js/bootstrap-4.4.1.js"></script> 
@@ -445,4 +451,5 @@
 <script src="js/swiper-bundle.min.js"></script> 
 <script src="js/printmall.js"></script>
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
