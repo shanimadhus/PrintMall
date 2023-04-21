@@ -15,9 +15,8 @@
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script>
    function onSubmit(token) {
-	   var subscribersemail = document.getElementById("subscribers_email");
-	   var req = subscribersemail.required;
-	   if(req==true){
+	   var subscribersemail = document.getElementById("subscribers_email").value;
+	   if(subscribersemail!=""){
 	 		document.getElementById("subscribersform").submit();
 	   }
 	   else{
