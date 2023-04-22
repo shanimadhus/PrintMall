@@ -852,6 +852,12 @@ body {
                     list-style: none;
                 }
             }
+			p{
+				padding: 12px;
+				+ h2, +h3{
+					margin-top: 24px;
+				}
+			}
             address{
                 p{
                     display: flex;
