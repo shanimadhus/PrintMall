@@ -289,6 +289,9 @@ body {
     .BG_vinyl_light{
         background-image: url("../images/Vinyl_BG_light.jpg");
     }
+    .BG_shopboard_light{
+        background-image: url("../images/shopboard_bg_light.jpg");
+    }
     .docset{
         @include default_docset;
     }
@@ -892,6 +895,9 @@ body {
             }
             &.BG_vinyl{
                 background-image: url("../images/Vinyl_BG_Dark.jpg");
+            }
+            &.BG_shopboard{
+                background-image: url("../images/shopboard_bg_dark.jpg");
             }
             padding: 45px 0px;
             h1{
