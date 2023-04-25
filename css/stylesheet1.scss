@@ -290,7 +290,7 @@ body {
         background-image: url("../images/Vinyl_BG_light.jpg");
     }
     .BG_shopboard_light{
-        background-image: url("../images/shopboard_bg_light.jpg");
+        background-image: url("../images/shop_board-assets/shop_bg_light.jpg");
     }
     .docset{
         @include default_docset;
@@ -310,6 +310,13 @@ body {
                         position: absolute;
                         left: -25px;
                         top: 0px;
+                    }
+                    ul{
+                        font-size: 100%;
+                        margin-top: 6px;
+                        li{
+                            font-size: 100%;
+                        }
                     }
                 }
             }
@@ -897,7 +904,7 @@ body {
                 background-image: url("../images/Vinyl_BG_Dark.jpg");
             }
             &.BG_shopboard{
-                background-image: url("../images/shopboard_bg_dark.jpg");
+                background-image: url("../images/shop_board-assets/shop_bg_dark.jpg");
             }
             padding: 45px 0px;
             h1{
