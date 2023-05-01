@@ -884,6 +884,16 @@ body {
             }
         }
         
+		//shop board
+		#print_mall_shop_board{
+			
+		}
+		
+		//Sign board
+		#print_mall_sign_board{
+			
+		}
+		
         //section header
         #print_mall_secnhdr1{
             &.BG_gallery{
@@ -913,6 +923,7 @@ body {
                 text-align: center;
             }
         }
+		
         .print_mall_secn1{
             padding: 15px 0px;
         }
@@ -942,6 +953,7 @@ body {
             }
         }
     }
+	
     //footer
     footer{
         font-size: 6px;
