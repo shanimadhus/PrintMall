@@ -929,6 +929,11 @@ body {
         }
         .print_mall_photosecn1{
             padding: 15px;
+			img{
+				+ img{
+					margin-top: 30px;
+				}
+			}
         }
         .print_mall_photosecn2{
             padding: 15px;
