@@ -295,6 +295,9 @@ body {
     .BG_signboard_light{
         background-image: url("../images/sign_boards/sign_board_bg_light.jpg");
     }
+	.BG_ledsignboard_light{
+		background-image: url("../images/LED_sign_board/LED_Sign_BG_light.jpg");
+	}
     .docset{
         @include default_docset;
     }
@@ -921,6 +924,9 @@ body {
             }
             &.BG_signboard{
                 background-image: url("../images/sign_boards/sign_board_bg_dark.jpg");
+            }
+            &.BG_ledsignboard{
+                background-image: url("../images/LED_sign_board/LED_Sign_BG_Dark.jpg");
             }
             padding: 45px 0px;
             h1{
