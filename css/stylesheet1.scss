@@ -298,6 +298,9 @@ body {
 	.BG_ledsignboard_light{
 		background-image: url("../images/LED_sign_board/LED_Sign_BG_light.jpg");
 	}
+	.BG_woodenframeboard_light{
+		background-image: url("../images/wooden_frame_board/Wooden_Frame_board_bg_light.jpg");
+	}
     .docset{
         @include default_docset;
     }
@@ -927,6 +930,9 @@ body {
             }
             &.BG_ledsignboard{
                 background-image: url("../images/LED_sign_board/LED_Sign_BG_Dark.jpg");
+            }
+            &.BG_woodenframeboard{
+                background-image: url("../images/wooden_frame_board/Wooden_Frame_board_bg_dark.jpg");
             }
             padding: 45px 0px;
             h1{
