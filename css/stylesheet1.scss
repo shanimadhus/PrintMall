@@ -906,6 +906,9 @@ body {
 		//Wooden Frame
 		#print_wooden_frame_board{
 			#print_mall_prices{
+				& > :first-child{
+					margin-top: 0px;
+				}
 				h2{
 					margin-top: 12px;
 				}
