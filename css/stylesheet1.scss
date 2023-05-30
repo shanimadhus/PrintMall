@@ -906,11 +906,11 @@ body {
 		//Wooden Frame
 		#print_wooden_frame_board{
 			#print_mall_prices{
-				& > :first-child{
+				h2{
 					margin-top: 0px;
 				}
-				h2{
-					margin-top: 12px;
+				.row h2{
+						margin-top: 18px;
 				}
 				form p.calculus{
 					margin-top: 24px;
