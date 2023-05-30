@@ -906,6 +906,12 @@ body {
 		//Wooden Frame
 		#print_wooden_frame_board{
 			#print_mall_prices{
+				h2{
+					margin-top: 12px;
+				}
+				form p.calculus{
+					margin-top: 24px;
+				}
 				@media (max-width: 767px){
 					margin: 0px -15px;
 					@media (max-width: 575px){
