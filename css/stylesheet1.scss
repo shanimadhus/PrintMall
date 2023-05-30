@@ -665,9 +665,14 @@ body {
                 margin-bottom: 24px;
             }
             form{
-                h2{
-                    font-size: 250%;
-                }
+				h2{
+					font-size: 250%;
+					margin-top: 0px;
+					margin-bottom: 0px;
+				}
+				.row h2{
+					margin-top: 18px;
+				}
                 label{
                     font-size: 140%;
                     margin: 12px 0px 6px;
@@ -706,7 +711,7 @@ body {
                         &.btn{
                             width: 100%;
                             font-size: 280%;
-                            margin-top: 12px;
+                            margin-top: 24px;
                             &.btn-primary{
                                 
                             }
@@ -724,7 +729,7 @@ body {
                         background: #dfeddd;
                         color: #000000;
                         padding: 2px 12px;
-                        margin: 12px 0px 0px;
+                        margin: 24px 0px 0px;
                         line-height: 1.5;
                         border: 3px solid #c2dcbc;
                         user-select: none;
@@ -766,6 +771,7 @@ body {
                 .form-group{
                     min-width: 100px;
                     width: 100%;
+					margin-bottom: 6px;
                     .form-control{
 						font-size: 150%;
 						font-weight: bold;
@@ -906,15 +912,6 @@ body {
 		//Wooden Frame
 		#print_wooden_frame_board{
 			#print_mall_prices{
-				h2{
-					margin-top: 0px;
-				}
-				.row h2{
-						margin-top: 18px;
-				}
-				form p.calculus{
-					margin-top: 24px;
-				}
 				@media (max-width: 767px){
 					margin: 0px -12.5px;
 					@media (max-width: 575px){
