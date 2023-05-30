@@ -203,7 +203,7 @@ body {
     word-wrap: break-word;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    
+    min-width: 240px;
 	.swiper{
 		font-size: 10px;
 	}
@@ -854,7 +854,7 @@ body {
                         max-width: 50%;
                     }
                     
-                    @media (max-width: 567px) {
+                    @media (max-width: 576px) {
                         max-width: 100%;
                     }
                 }
@@ -901,6 +901,18 @@ body {
 		//Sign board
 		#print_mall_sign_board{
 			
+		}
+		
+		//Wooden Frame
+		#print_wooden_frame_board{
+			#print_mall_prices{
+				@media (max-width: 767px){
+					margin: 0px -15px;
+					@media (max-width: 575px){
+						margin: 0px -30px;
+					}
+				}
+			}
 		}
 		
         //section header
