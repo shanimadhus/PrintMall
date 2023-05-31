@@ -721,9 +721,8 @@ body {
                         }
                     }
                 }
-                p{
-                    font-size: 160%; 
-                    &.calculus{
+                h2{
+                    &.calculus{ 
                         font-size: 210%;
                         text-align: center;
                         background: #dfeddd;
@@ -748,13 +747,14 @@ body {
                             }
                         }
                     }
-                    &.note{
+				}
+                    p.note{
+						font-size: 160%;
                         color: #dd6969;
                         margin: 12px 0px 0px;
                         text-align: left;
                         text-transform: uppercase;
                     }
-                }
                 .input-group{
                     flex-wrap: nowrap;
                     input{
