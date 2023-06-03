@@ -301,6 +301,9 @@ body {
 	.BG_woodenframeboard_light{
 		background-image: url("../images/wooden_frame_board/Wooden_Frame_board_bg_light.jpg");
 	}
+	.BG_acrylicboard_light{
+		background-image: url("../images/Acrylic_Board/Acrylic_board_BG_light.jpg");
+	}
     .docset{
         @include default_docset;
     }
@@ -910,7 +913,7 @@ body {
 		}
 		
 		//Wooden Frame
-		#print_wooden_frame_board{
+		#print_mall_wooden_frame_board{
 			#print_mall_prices{
 				@media (max-width: 767px){
 					margin: 0px -12.5px;
@@ -920,6 +923,11 @@ body {
 					}
 				}
 			}
+		}
+		
+		//Acrylic Board
+		#print_mall_acrylic_board{
+			
 		}
 		
         //section header
@@ -952,6 +960,9 @@ body {
             }
             &.BG_woodenframeboard{
                 background-image: url("../images/wooden_frame_board/Wooden_Frame_board_bg_dark.jpg");
+            }
+            &.BG_acrylicboard{
+                background-image: url("../images/Acrylic_Board/Acrylic_board_BG_Dark.jpg");
             }
             padding: 45px 0px;
             h1{
