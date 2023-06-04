@@ -304,6 +304,9 @@ body {
 	.BG_acrylicboard_light{
 		background-image: url("../images/Acrylic_Board/Acrylic_board_BG_light.jpg");
 	}
+	.BG_Hoarding_light{
+		background-image: url("../images/Hoarding/Hoarding_BG_Light.jpg");
+	}
     .docset{
         @include default_docset;
     }
@@ -963,6 +966,9 @@ body {
             }
             &.BG_acrylicboard{
                 background-image: url("../images/Acrylic_Board/Acrylic_board_BG_Dark.jpg");
+            }
+            &.BG_Hoarding{
+                background-image: url("../images/Hoarding/Hoarding_BG_Dark.jpg");
             }
             padding: 45px 0px;
             h1{
