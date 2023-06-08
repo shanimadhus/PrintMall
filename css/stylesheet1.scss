@@ -307,6 +307,9 @@ body {
 	.BG_Hoarding_light{
 		background-image: url("../images/Hoarding/Hoarding_BG_Light.jpg");
 	}
+	.BG_Printing_light{
+		background-image: url("../images/digital_printing/Printing_BG_Light.jpg");
+	}
     .docset{
         @include default_docset;
     }
@@ -933,6 +936,11 @@ body {
 			
 		}
 		
+		//Printing
+		#print_mall_Printing{
+			
+		}
+		
         //section header
         #print_mall_secnhdr1{
             &.BG_gallery{
@@ -969,6 +977,9 @@ body {
             }
             &.BG_Hoarding{
                 background-image: url("../images/Hoarding/Hoarding_BG_Dark.jpg");
+            }
+            &.BG_Printing{
+                background-image: url("../images/digital_printing/Printing_BG_Dark.jpg");
             }
             padding: 45px 0px;
             h1{
