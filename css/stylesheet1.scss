@@ -310,6 +310,9 @@ body {
 	.BG_Printing_light{
 		background-image: url("../images/digital_printing/Printing_BG_Light.jpg");
 	}
+	.BG_design_light{
+		background-image: url("../images/design/design_BG_light.jpg");
+	}
     .docset{
         @include default_docset;
     }
@@ -941,6 +944,11 @@ body {
 			
 		}
 		
+		//Design
+		#print_mall_design{
+			
+		}
+		
         //section header
         #print_mall_secnhdr1{
             &.BG_gallery{
@@ -980,6 +988,9 @@ body {
             }
             &.BG_Printing{
                 background-image: url("../images/digital_printing/Printing_BG_Dark.jpg");
+            }
+            &.BG_design{
+                background-image: url("../images/design/design_BG_dark.jpg");
             }
             padding: 45px 0px;
             h1{
