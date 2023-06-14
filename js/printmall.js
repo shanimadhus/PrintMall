@@ -5,38 +5,42 @@ $(function () {
 
   //anim AOS
   if ($("[data-aos]").length > 0) {
-    AOS.init({
-      duration: 1200,
-      once: true
-    });
+	 $.get("js/aos.js", function(){
+		AOS.init({
+		  duration: 1200,
+		  once: true
+		});
+	 });
   }
 
   //Swiper
   if ($(".swiper.home").length > 0) {
-    const swiper = new Swiper('.swiper', {
-      spaceBetween: 0,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-        waitForTransition: true
-      },
-      loop: true,
-      breakpoints: {
-        991: {
-          slidesPerView: 5,
-        },
-        768: {
-          slidesPerView: 3,
-        },
-        480: {
-          slidesPerView: 2,
-        },
-        375: {
-          slidesPerView: 1,
-        }
-      }
-    });
+	  $.get("js/swiper-bundle.min.js", function(){
+		const swiper = new Swiper('.swiper', {
+		  spaceBetween: 0,
+		  autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+			pauseOnMouseEnter: true,
+			waitForTransition: true
+		  },
+		  loop: true,
+		  breakpoints: {
+			991: {
+			  slidesPerView: 5,
+			},
+			768: {
+			  slidesPerView: 3,
+			},
+			480: {
+			  slidesPerView: 2,
+			},
+			375: {
+			  slidesPerView: 1,
+			}
+		  }
+		});
+	  });
   }
 
   //calculus
@@ -137,23 +141,25 @@ $(function () {
   }
   //gallery
   function photoslide(obj1, obj2, obj3) {
-    const swiper = new Swiper(obj1, {
-      slidesPerView: 1,
-      spaceBetween: 0,
-      autoplay: false,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        type: 'fraction',
-      },
-      loop: true,
-      zoom: {
-        maxRatio: 5,
-      },
-    });
+	  $.get("js/swiper-bundle.min.js", function(){
+		const swiper = new Swiper(obj1, {
+		  slidesPerView: 1,
+		  spaceBetween: 0,
+		  autoplay: false,
+		  navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		  },
+		  pagination: {
+			el: ".swiper-pagination",
+			type: 'fraction',
+		  },
+		  loop: true,
+		  zoom: {
+			maxRatio: 5,
+		  },
+		});
+	  
     swiper.slideTo(obj2 + 1, 0);
     //zoom
     $zooms = obj3;
@@ -215,7 +221,7 @@ $(function () {
       $(this).toggle();
       $("#fullscrn, #closes, .madhus_pgmargin").toggle();
     });
-
+});
   }
   if ($("#gallery1").length > 0) {
     $("#gallery1 a.print_mall_gallery2").click(function () {

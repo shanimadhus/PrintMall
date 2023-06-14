@@ -10,7 +10,7 @@
 <link href="../images/print_mall_icon.ico" rel="icon" type="image/x-icon">
 <!-- Bootstrap -->
 <link href="../css/bootstrap-4.4.1.css" rel="stylesheet">
-<link href="../css/stylesheet1.css?v=2.7" rel="stylesheet">
+<link href="../css/stylesheet1.css?v=2.8" rel="stylesheet">
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
 </head>
@@ -64,7 +64,7 @@
     </section>
     <section id="print_mall_products">
       <div class="container">
-        <h1 class="display-4">Print Mall Products</h1>
+        <h2 class="display-4">Print Mall Products</h2>
       </div>
       <div class="swiper" data-aos="fade-down"> 
         <!--            <div class="swiper-pagination"></div>-->
@@ -425,8 +425,6 @@
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="../js/popper.min.js"></script> 
 <script src="../js/bootstrap-4.4.1.js"></script> 
-<script src="../js/aos.js"></script> 
-<script src="../js/swiper-bundle.min.js"></script> 
 <script src="../js/printmall.js"></script>
 </body>
 </html>

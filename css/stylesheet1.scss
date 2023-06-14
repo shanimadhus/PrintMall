@@ -579,7 +579,7 @@ body {
 			background-position: top center; 
 			background-attachment: fixed; 
 			padding: 60px 0px; 
-			h1{
+			h2{
 				font-size: 250%;
 				font-weight: 700;
 				color: rebeccapurple;
@@ -792,6 +792,15 @@ body {
                 }
             }
         }
+		div#print_mall_prices{
+			@media (max-width: 767px){
+				margin: 0px -12.5px;
+				@media (max-width: 575px){
+					margin: 0px calc(-6% - 12.5px);
+					padding-right: 1%;
+				}
+			}
+		}
         .product-photo{
             text-align: center;
             padding: 25px;
@@ -923,15 +932,7 @@ body {
 		
 		//Wooden Frame
 		#print_mall_wooden_frame_board{
-			#print_mall_prices{
-				@media (max-width: 767px){
-					margin: 0px -12.5px;
-					@media (max-width: 575px){
-						margin: 0px calc(-6% - 12.5px);
-						padding-right: 1%;
-					}
-				}
-			}
+			
 		}
 		
 		//Acrylic Board
