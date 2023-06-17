@@ -313,6 +313,9 @@ body {
 	.BG_design_light{
 		background-image: url("../images/design/design_BG_light.jpg");
 	}
+	.BG_careers_light{
+		background-image: url("../images/careers/Careers_BG_light.jpg");
+	}
     .docset{
         @include default_docset;
     }
@@ -950,6 +953,11 @@ body {
 			
 		}
 		
+		//Careers
+		#print_mall_careers{
+			
+		}
+		
         //section header
         #print_mall_secnhdr1{
             &.BG_gallery{
@@ -992,6 +1000,9 @@ body {
             }
             &.BG_design{
                 background-image: url("../images/design/design_BG_dark.jpg");
+            }
+            &.BG_careers{
+                background-image: url("../images/careers/Careers_BG_Dark.jpg");
             }
             padding: 45px 0px;
             h1{
