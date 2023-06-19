@@ -11,28 +11,8 @@
 <link href="images/print_mall_icon.ico" rel="icon" type="image/x-icon">
 <!-- Bootstrap -->
 <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-<link href="css/stylesheet1.css?v=2.8" rel="stylesheet">
+<link href="css/stylesheet1.css?v=2.9" rel="stylesheet">
 <!-- InstanceBeginEditable name="head" -->
-<script>
-    function onSubmit(token) {
-      document.getElementById("subscribersform").submit();
-    }
-
-    function validate(event) {
-      event.preventDefault();
-      if (!document.getElementById("subscribers_email").value) {
-        alert("Email is required!");
-      } else {
-        grecaptcha.execute();
-      }
-    }
-
-    function onload() {
-      var element = document.getElementById("submitcapcha");
-      element.onclick = validate;
-    }
-  </script> 
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <!-- InstanceEndEditable -->
 </head>
 <body>
@@ -385,13 +365,7 @@
     <section id="print_mall_subscribers">
       <div class="container">
         <h2>SUBSCRIBE</h2>
-        <p>Sign up to hear from us about specials, sales, and events.</p>
-        <form class="form-inline justify-content-center" action="https://submit-form.com/C7gZiakO" id="subscribersform" method="post">
-          <input type="email" class="form-control" placeholder="Enter email" name="subscribers_email" id="subscribers_email" required>
-          <div id="recaptcha" class="g-recaptcha" data-sitekey="6LdaApslAAAAAGBTn32bO8DTnUwkzn5cu9VBgfwX" data-callback="onSubmit" data-size="invisible"></div>
-          <button class="btn" id="submitcapcha" type="submit">Subscribe</button>
-        </form>
-        <script>onload();</script> 
+        <script type="text/javascript" src="https://form.jotform.com/jsform/231074870667058"></script>
       </div>
     </section>
     <!-- InstanceEndEditable --> </main>

@@ -623,51 +623,58 @@ body {
 		}
 		#print_mall_subscribers{
 			padding: 60px 0px;
-			background-color: #262626;
+			background-color: #ffffff;
 			color: #ffffff;
 			text-align: center;
 			h2{
 				font-size: 350%;
 				font-weight: 900;
-				margin-bottom: 12px;
+				color: #2C3345;
+				margin-bottom: -72px;
+				@media screen and (min-width: 481px) and (max-width: 768px){
+					margin-bottom: 12px;
+				}
+			}
+			.form-all{
+				margin-top: 0px!important;
 			}
 			p{
 				font-size: 180%;
 				margin-bottom: 6px;
 			}
-			form{
-				font-size: 180%;
-				margin: 12px 0px 0px;
-				.btn{
-					color: #fff;
-					background-color: #242673;
-					border-color: #1D1F5E;
-				}
-				@media (max-width: 767px){
-					input{
-						width: 100%;
-						border-bottom-left-radius: 0px;
-						border-bottom-right-radius: 0px;
-					}
-					.btn{
-						width: 100%;
-						border-top-left-radius: 0px;
-						border-top-right-radius: 0px;
-					}
-				}
-				@media (min-width: 768px){
-					input{
-						width: 100%;
-						max-width: 350px;
-						border-bottom-right-radius: 0px;
-						border-top-right-radius: 0px;
-					}
-					.btn{
-						border-bottom-left-radius: 0px;
-						border-top-left-radius: 0px;
-					}
-				}
-			}
+//			form{
+//				font-size: 180%;
+//				margin: 12px 0px 0px;
+//				.btn{
+//					color: #fff;
+//					background-color: #242673;
+//					border-color: #1D1F5E;
+//				}
+//				@media (max-width: 767px){
+//					input{
+//						width: 100%;
+//						border-bottom-left-radius: 0px;
+//						border-bottom-right-radius: 0px;
+//					}
+//					.btn{
+//						width: 100%;
+//						border-top-left-radius: 0px;
+//						border-top-right-radius: 0px;
+//					}
+//				}
+//				@media (min-width: 768px){
+//					input{
+//						width: 100%;
+//						max-width: 350px;
+//						border-bottom-right-radius: 0px;
+//						border-top-right-radius: 0px;
+//					}
+//					.btn{
+//						border-bottom-left-radius: 0px;
+//						border-top-left-radius: 0px;
+//					}
+//				}
+//			}
 		}
         #print_mall_prices{
 			color: #ffffff;
